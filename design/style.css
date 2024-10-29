@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Barlow Semi Condensed", sans-serif; 
+}
+
+body{
+    background-color: #edf2f8;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.content{
+    display: flex;
+    padding: 1.6rem;
+    gap: 1.6rem;
+    width: 90%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    position: relative;
+    width: 100%;
+}
+
+.top_div,
+.bottom_div{
+    display: flex;
+    margin: 0;
+    gap: 1.6rem;
+}
+.top_div {
+    margin-bottom: 1rem;
+}
+.first_div{
+    background-color: #733fc8;
+    position: relative;
+    flex: 2;
+}
+
+span{
+    position: inherit;
+    z-index: 1;
+}
+
+h2{
+    position: inherit;
+    z-index: 1;
+}
+
+.second_div{
+    flex: 1;
+    background-color: #49556b;
+}
+.third_div,
+.fifth_div{
+    background-color: #fff;
+    color: rgb(129, 134, 136);
+}
+
+.fourth_div{
+    background-color: #18202d;
+    flex: 2;
+}
+
+.third_div{
+    flex: 1;
+}
+
+.fifth_div{
+    flex: 1;
+    right: 10px;
+}
+
+.box div,
+.fourth_div{
+    border-radius: 10px;
+}
+.third_div,
+.fourth_div{
+    padding-bottom: 1rem;
+}
+
+.profile_info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.profile_info > span {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_info img{
+    border: 3px solid;
+    border-color: inherit;
+    opacity: 80%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.bg-pattern-quotation{
+    position: absolute;
+    right: 13%;
+    z-index: 0;
+    width: 8rem;
+}
+h2{
+    font-weight: 600;
+    margin-top: 1.7rem;
+}
+
+.first_div,
+.second_div,
+.third_div,
+.fifth_div{
+    padding: 1rem;
+}
+
+.text1{
+    margin-top: 1.5rem;
+    opacity: 50%;
+}
+
+.image{
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1150px) {
+    .content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  @media (max-width: 680px) {
+    .top_div {
+      flex-direction: column;
+    }
+    .bottom_div {
+      flex-direction: column;
+    }
+  }
